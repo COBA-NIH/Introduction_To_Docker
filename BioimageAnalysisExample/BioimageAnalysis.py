@@ -1,7 +1,7 @@
 import skimage.measure
 from skimage import io, filters 
 import pandas as pd
-url = 'https://github.com/sugan89/Introduction_To_Docker/blob/main/RPE.tif?raw=true'
+url = 'https://github.com/sugan89/Introduction_To_Docker/blob/main/BioimageAnalysisExample/RPE.tif?raw=true'
 image = io.imread(url)
 thresholded_image = skimage.filters.threshold_otsu(image)
 binary = image > thresholded_image
